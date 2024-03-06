@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About-us</title>
+
+    <meta name="description" content="Описание">
+    <meta name="keywords" content="Ключевики">
+    <meta name="author" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+	
+	
+    <script>
+        const totalFontSize = function() {
+            const pageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;  
+            
+            if (pageWidth > 2000) {
+                document.documentElement.style.fontSize = '14px';
+            }else if (pageWidth > 992) {
+                let value = (pageWidth * 10 / 1920).toFixed(2);
+                document.documentElement.style.fontSize = value + 'px';
+            } else {
+                document.documentElement.style.fontSize = '10px';
+            }
+        };
+
+        totalFontSize();
+		
+		window.addEventListener('resize', totalFontSize);
+		
+    </script>
+    	
+	<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20240306183154"> 
+	
+	<link rel="stylesheet" href="css/style.min.css?_v=20240306183154">
+
+
+
+</head>
+
+<body >
+
+  
+
+  <header class="header">
+  <div class="header__container">
+    <div></div>
+    <nav class="header__nav header-nav">
+      <a href="index.html" class="header-nav__link">Home</a>
+      <a href="#about" class="header-nav__link">About us</a>
+      <a href="#contacts" class="header-nav__btn btn">Contacts</a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+
+    <section class="hero" id="home">
+  <div class="hero__container">
+    <h1 class="hero__title">Guangzhou Yixio Trading</h1>
+    <div class="hero__scroll">
+      <picture>
+        <source media="(max-width: 992px)" srcset="img/scroll-mob.svg" />
+        <img src="img/scroll.svg" alt="Lavuri toys" loading="lazy" class="img-full" />
+      </picture>
+    </div>
+  </div>
+  <div class="hero__bg">
+    <picture><source srcset="img/hero-bg.webp" type="image/webp"><img src="img/hero-bg.jpg" alt="bg" loading="lazy" class="img-full" /></picture>
+  </div>
+</section>
+
+    <section class="about" id="about">
+  <div class="about__container">
+    <h2 class="about__title">About us</h2>
+    <div class="about__body">
+      <p class="about__info">Guangzhou Yixio Trading Co., Ltd</p>
+      <p class="about__info">Office 502U, Room 502, No. 1 Jinsui Road, Tianhe District, Guangzhou City</p>
+      <p class="about__info">Isroil adilov</p>
+    </div>
+  </div>
+</section>
+
+    <section class="contacts" id="contacts">
+  <div class="contacts__container">
+    <h2 class="contacts__title">Contact us</h2>
+    <form action="/" class="contacts__form form">
+      <div class="form__group">
+        <label for="fname" class="form__label">First name:</label>
+        <input type="text" id="fname" name="fname" class="form__input" required />
+      </div>
+      <div class="form__group">
+        <label for="lname" class="form__label">Last name:</label>
+        <input type="text" id="lname" name="lname" class="form__input" required />
+      </div>
+      <div class="form__group">
+        <label for="email" class="form__label">Email:</label>
+        <input type="email" id="email" name="email" class="form__input" required />
+      </div>
+      <button type="submit" class="form__btn btn">Submit</button>
+    </form>
+  </div>
+</section>
+
+   
+  </main>
+
+  <!-- END main page -->
+
+  <footer class="footer">
+  <div class="footer__container">
+    <nav class="footer__nav footer-nav">
+      <a href="index.html" class="footer-nav__link">Home</a>
+      <a href="#about" class="footer-nav__link">About us</a>
+      <a href="#contacts" class="footer-nav__link">Contacts</a>
+    </nav>
+    <div class="footer__copy">COPYRIGHT 2024</div>
+  </div>
+</footer>
+  
+  
+  <script src="js/plugins/plugins.min.js?_v=20240306183154"></script>
+
+<script src="js/app.min.js?_v=20240306183154"></script>
+ 
+</body>
+
+</html>

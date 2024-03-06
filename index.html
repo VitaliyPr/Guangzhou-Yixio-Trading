@@ -37,9 +37,9 @@
 		
     </script>
     	
-	<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20240306164819"> 
+	<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20240306183154"> 
 	
-	<link rel="stylesheet" href="css/style.min.css?_v=20240306164819">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240306183154">
 
 
 
@@ -49,6 +49,16 @@
 
   
 
+  <header class="header">
+  <div class="header__container">
+    <div></div>
+    <nav class="header__nav header-nav">
+      <a href="index.html" class="header-nav__link">Home</a>
+      <a href="about-us.html" class="header-nav__link">About us</a>
+      <a href="#contacts" class="header-nav__btn btn">Contacts</a>
+    </nav>
+  </div>
+</header>
 
   <main>
 
@@ -67,7 +77,7 @@
   </div>
 </section>
 
-    <section class="services">
+    <section class="services" >
   <div class="services__container">
     <h2 class="services__title">General business items</h2>
     <div class="services__wrap">
@@ -240,70 +250,22 @@
 </section>
     <section class="contacts" id="contacts">
   <div class="contacts__container">
-    <div class="contacts__wrap">
-      <div class="contacts__col">
-        <h2 class="contacts__title">Our Contacts</h2>
-        <p class="contacts__info">Guangzhou Yixio Trading Co., Ltd</p>
-        <p class="contacts__info">Office 502U, Room 502, No. 1 Jinsui Road, Tianhe District, Guangzhou City</p>
-        <p class="contacts__info">Isroil adilov</p>
-        <h4 class="contacts__bank">Bank Details:</h4>
-        <div class="contacts-bank__item ui accordion">
-          <div class="contacts-bank-item__head title">
-            <h5>USD</h5>
-            <svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M788.307 605.357C803.897 589.161 803.897 562.937 788.307 546.782L457.765 204.263C426.545 171.912 375.899 171.912 344.679 204.263L11.6984 549.263C-3.73141 565.293 -3.93135 591.19 11.2986 607.427C26.8484 624.037 52.4713 624.196 68.2609 607.876L372.94 292.114C388.57 275.918 413.874 275.918 429.504 292.114L731.785 605.357C747.374 621.553 772.718 621.553 788.307 605.357Z"
-                fill="black"
-              />
-            </svg>
-          </div>
-          <div class="contacts-bank-item__content content">
-            <ul class="contacts-bank-item__list">
-              <li class="contacts-bank-item__item"><span>Bank Name:</span> COMMUNITY FEDERAL SAVINGS BANK</li>
-              <li class="contacts-bank-item__item"><span>SWIFT Code:</span> CMFGUS33</li>
-              <li class="contacts-bank-item__item"><span>Account USD:</span> 8313683095</li>
-              <li class="contacts-bank-item__item"><span>Routing NO.:</span> 026073150</li>
-            </ul>
-          </div>
-        </div>
-        <div class="contacts-bank__item ui accordion">
-          <div class="contacts-bank-item__head title">
-            <h5>EUR</h5>
-            <svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M788.307 605.357C803.897 589.161 803.897 562.937 788.307 546.782L457.765 204.263C426.545 171.912 375.899 171.912 344.679 204.263L11.6984 549.263C-3.73141 565.293 -3.93135 591.19 11.2986 607.427C26.8484 624.037 52.4713 624.196 68.2609 607.876L372.94 292.114C388.57 275.918 413.874 275.918 429.504 292.114L731.785 605.357C747.374 621.553 772.718 621.553 788.307 605.357Z"
-                fill="black"
-              />
-            </svg>
-          </div>
-          <div class="contacts-bank-item__content content">
-            <ul class="contacts-bank-item__list">
-              <li class="contacts-bank-item__item"><span>Bank Name:</span> WISE EUROPE S.A</li>
-              <li class="contacts-bank-item__item"><span>SWIFT Code:</span> TRWIBEB1XXX</li>
-              <li class="contacts-bank-item__item"><span>Account EUR:</span> BE17 9677 4445 1421</li>
-            </ul>
-          </div>
-        </div>
+    <h2 class="contacts__title">Contact us</h2>
+    <form action="/" class="contacts__form form">
+      <div class="form__group">
+        <label for="fname" class="form__label">First name:</label>
+        <input type="text" id="fname" name="fname" class="form__input" required />
       </div>
-      <div class="contacts__col">
-        <p class="contacts__info">Write your name and mail and we will contact you</p>
-        <form action="/" class="contacts__form form">
-          <div class="form__group">
-            <label for="name" class="form__label">Name:</label>
-            <input type="text" id="name" name="name" class="form__input" required />
-          </div>
-          <div class="form__group">
-            <label for="email" class="form__label">Email:</label>
-            <input type="email" id="email" name="email" class="form__input" required />
-          </div>
-          <button type="submit" class="form__btn btn">Submit</button>
-        </form>
+      <div class="form__group">
+        <label for="lname" class="form__label">Last name:</label>
+        <input type="text" id="lname" name="lname" class="form__input" required />
       </div>
-    </div>
+      <div class="form__group">
+        <label for="email" class="form__label">Email:</label>
+        <input type="email" id="email" name="email" class="form__input" required />
+      </div>
+      <button type="submit" class="form__btn btn">Submit</button>
+    </form>
   </div>
 </section>
 
@@ -314,15 +276,19 @@
 
   <footer class="footer">
   <div class="footer__container">
-    <div class="footer-nav__link">Guangzhou Yixio Trading</div>
+    <nav class="footer__nav footer-nav">
+      <a href="index.html" class="footer-nav__link">Home</a>
+      <a href="about-us.html" class="footer-nav__link">About us</a>
+      <a href="#contacts" class="footer-nav__link">Contacts</a>
+    </nav>
     <div class="footer__copy">COPYRIGHT 2024</div>
   </div>
 </footer>
   
   
-  <script src="js/plugins/plugins.min.js?_v=20240306164819"></script>
+  <script src="js/plugins/plugins.min.js?_v=20240306183154"></script>
 
-<script src="js/app.min.js?_v=20240306164819"></script>
+<script src="js/app.min.js?_v=20240306183154"></script>
  
 </body>
 
